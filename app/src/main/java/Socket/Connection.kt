@@ -42,6 +42,7 @@ class Connection {
             } finally {
                 mSocket = null
             }
+
         }
         mSocket = null
     }
