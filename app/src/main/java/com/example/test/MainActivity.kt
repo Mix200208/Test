@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import java.util.jar.Attributes
+import java.net.Socket
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         // findViewById<класс объекта>(id нашего объекта)
         val name = findViewById<Button>(R.id.button)
 
+        var count = 0
 
     }
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         // context, 3 переменная - длительность отображения
         val mes = Intent(this,MainTestActivity::class.java)
         startActivity(mes)
+
     }
 
     override fun onStop() {
