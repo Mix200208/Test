@@ -1,10 +1,9 @@
 package com.example.test
 
-import Socket.Client
+import Socket.ClientK
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -17,13 +16,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickLoginButton(){
-        // context, 3 переменная - длительность отображения
         val userName: EditText = findViewById(R.id.UserName)
-        val client : Client = Client()
-        client.sendData(userName.toString())
-        val mes = Intent(this,MainTestActivity::class.java)
-        mes.putExtra(MainTestActivity.USER_NAME, userName.toString())
-        startActivity(mes)
+        print(userName.text.toString())
+//        val client : ClientK = ClientK()
+//        client.sendData(userName.text.toString())
+        Thread(ClientK(userName.text.toString())).start()
+        val intent = Intent(this,MainTestActivity::class.java)
+        intent.putExtra(MainTestActivity.USER_NAME, userName.text.toString())
+        startActivity(intent)
     }
 
 

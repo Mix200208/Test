@@ -7,18 +7,6 @@
     android:background="#2979FF">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="173dp"
-        android:layout_height="144dp"
-        android:layout_marginTop="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAccount"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@tools:sample/avatars"
-        />
-
     <TextView
         android:id="@+id/textViewAccount"
         android:layout_width="167dp"
@@ -36,8 +24,8 @@
         android:id="@+id/textNameAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/user_name"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAccount" />
