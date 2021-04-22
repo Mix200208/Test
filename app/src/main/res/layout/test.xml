@@ -4,52 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF1744">
+    android:background="#333131">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="155dp"
         android:layout_height="42dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginBottom="439dp"
-        android:onClick="click"
-        android:text="войти"
+        android:layout_marginTop="60dp"
+        android:onClick="clickLoginButton"
+        android:text="@string/login_button"
         android:textColor="@color/black"
         app:backgroundTint="#D8D4D4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserPassword"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Name"
+        android:id="@+id/UserName"
         android:layout_width="228dp"
         android:layout_height="34dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginTop="60dp"
         android:background="#FFFFFF"
         android:ems="10"
+        android:hint="@string/text_login"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/UserPassword"
-        app:layout_constraintStart_toStartOf="@+id/UserPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/UserPassword"
         android:layout_width="229dp"
         android:layout_height="33dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginTop="20dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/UserName"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,33 +1,32 @@
 package com.example.test
 
+import Socket.Client
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import java.util.jar.Attributes
-import java.net.Socket
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.test)
-        // findViewById<класс объекта>(id нашего объекта)
-        val name = findViewById<Button>(R.id.button)
-
-        var count = 0
-
+        val button: Button = findViewById(R.id.buttonLogin)
+        button.setOnClickListener { clickLoginButton() }
     }
 
-    fun click(view: View){
+    fun clickLoginButton(){
         // context, 3 переменная - длительность отображения
+        val userName: EditText = findViewById(R.id.UserName)
+        val client : Client = Client()
+        client.sendData(userName.toString())
         val mes = Intent(this,MainTestActivity::class.java)
+        mes.putExtra(MainTestActivity.USER_NAME, userName.toString())
         startActivity(mes)
-
     }
+
+
 
     override fun onStop() {
         super.onStop()
@@ -35,7 +34,5 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-
         }
-
-    }
+}

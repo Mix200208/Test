@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_profile">Ваш профиль</string>
+    <string name="login_button">Войти</string>
+    <string name="text_login">Login</string>
+    <string name="user_name" />
+</resources>

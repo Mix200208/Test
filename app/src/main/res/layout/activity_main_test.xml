@@ -7,27 +7,39 @@
     android:background="#2979FF">
 
 
-
-
-
-<ImageView
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="173dp"
         android:layout_height="144dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="255dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewAccount"
         android:layout_width="167dp"
         android:layout_height="26dp"
-        android:text="Страница"
+        android:layout_marginTop="30dp"
+        android:text="@string/your_profile"
         android:textColorLink="#FFFFFF"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="83dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textNameAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
