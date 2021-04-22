@@ -25,7 +25,7 @@ class ClientK(val abc: String) : Runnable{
         val gson = Gson()
         val protocol = Protocol(abc)
 
-        val socket = Socket("127.0.0.0", 30333)
+        val socket = Socket("10.0.2.2", 30333)
         val objectOutputStream = ObjectOutputStream(socket.getOutputStream())
         objectOutputStream.writeObject(gson.toJson(protocol))
         objectOutputStream.flush()
