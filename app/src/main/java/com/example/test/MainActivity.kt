@@ -1,6 +1,7 @@
 package com.example.test
 
 import Socket.ClientK
+import Socket.Connection
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,10 +18,16 @@ class MainActivity : AppCompatActivity() {
 
     fun clickLoginButton(){
         val userName: EditText = findViewById(R.id.UserName)
-        print(userName.text.toString())
-//        val client : ClientK = ClientK()
-//        client.sendData(userName.text.toString())
-        Thread(ClientK(userName.text.toString())).start()
+
+        //Отправка данных через ClientX
+        val client : Connection = Connection("10.0.2.2", 30333)
+        client.openConnection()
+        client.sendData(userName.text.toString())
+        client.closeConnection()
+
+        //Старт отдельного потока отправки данных через ClientK
+        //Thread(ClientK(userName.text.toString())).start()
+
         val intent = Intent(this,MainTestActivity::class.java)
         intent.putExtra(MainTestActivity.USER_NAME, userName.text.toString())
         startActivity(intent)
