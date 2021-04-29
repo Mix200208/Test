@@ -20,13 +20,13 @@ class MainActivity : AppCompatActivity() {
         val userName: EditText = findViewById(R.id.UserName)
 
         //Отправка данных через ClientX
-        val client : Connection = Connection("10.0.2.2", 30333)
-        client.openConnection()
-        client.sendData(userName.text.toString())
-        client.closeConnection()
+        //val client : Connection = Connection("10.0.2.2", 30333)
+        //client.openConnection()
+        //client.sendData(userName.text.toString())
+        //client.closeConnection()
 
         //Старт отдельного потока отправки данных через ClientK
-        //Thread(ClientK(userName.text.toString())).start()
+        Thread(ClientK(userName.text.toString())).start()
 
         val intent = Intent(this,MainTestActivity::class.java)
         intent.putExtra(MainTestActivity.USER_NAME, userName.text.toString())
@@ -41,5 +41,5 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        }
+    }
 }

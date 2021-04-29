@@ -4,4 +4,12 @@
     <string name="login_button">Войти</string>
     <string name="text_login">Логин</string>
     <string name="user_name" >Пекс</string>
+    <string name="account">Аккаунт</string>
+    <string name="votes_count">50</string>
+    <string name="subs_count">100,5 K</string>
+    <string name="subscriptions_count">50</string>
+    <string name="subs_text">подписчики</string>
+    <string name="votes_text">опросы</string>
+    <string name="login_text">Вход</string>
+    <string name="text_password">Введите пароль</string>
 </resources>

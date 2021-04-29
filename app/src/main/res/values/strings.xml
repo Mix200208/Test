@@ -2,6 +2,14 @@
     <string name="app_name" translatable="false">Vote</string>
     <string name="your_profile">Your profile</string>
     <string name="login_button">Login</string>
-    <string name="text_login">Login</string>
+    <string name="text_login">Enter login</string>
     <string name="user_name" />
+    <string name="account">Account</string>
+    <string name="votes_count">50</string>
+    <string name="subs_count">100,5 K</string>
+    <string name="subscriptions_count">50</string>
+    <string name="subs_text">subs</string>
+    <string name="votes_text">votes</string>
+    <string name="login_text">Sign in</string>
+    <string name="text_password">Enter password</string>
 </resources>
