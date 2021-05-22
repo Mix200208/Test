@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2979FF">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="241dp"
+            android:layout_marginBottom="57dp"
+            android:background="@color/white" >
+
+        </ListView>-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fill">
+
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="676dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/postNews"
+                android:layout_width="match_parent"
+                android:layout_height="676dp">
+            </ListView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_home_24">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/SearchBtn"
+            android:onClick="clickOnSearchButton"
+
+            android:layout_width="22dp"
+
+            android:layout_height="22dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_search_24">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_add_circle_outline_24">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_notifications_none_24">
+
+        </ImageButton>
+
+        <ImageButton
+
+            android:onClick="clickOnHomeButton"
+
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_person_24">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,228 +6,231 @@
     android:background="#2979FF">
 
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <View
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/fill"
-        >
+        android:layout_height="match_parent">
 
 
+        <!--<ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="241dp"
+            android:layout_marginBottom="57dp"
+            android:background="@color/white" >
 
-    </View>
-
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="241dp"
-        android:layout_marginBottom="57dp"
-        android:background="@color/white" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_marginBottom="11dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/subs_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/view1"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="312dp"
-        android:background="#C4C4C4"
-        app:layout_constraintBottom_toTopOf="@+id/account_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="312dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="24dp"
-        android:background="#C4C4C4"
-        app:layout_constraintBottom_toTopOf="@+id/account_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        </ListView>-->
 
 
-    <ImageView
-        android:id="@+id/rectangle_2"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginRight="148dp"
-        android:layout_marginBottom="519dp"
-        android:background="@drawable/imageviewaccount"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintCircleRadius="110dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textNameAccount"
-        android:layout_width="match_parent"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="142dp"
-        android:gravity="center"
-        android:lineSpacingExtra="2sp"
-        android:text="@string/user_name"
-        android:textAppearance="@style/user_name"
-        android:translationY="-0.98sp"
-        app:layout_constraintBottom_toTopOf="@+id/subs_count"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/votes_count"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="291dp"
-        android:layout_marginEnd="291dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="177dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="3sp"
-        android:text="@string/votes_count"
-        android:textAppearance="@style/profile_count"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/subs_count"
-        android:layout_width="78dp"
-        android:layout_height="27dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="177dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginRight="145dp"
-        android:layout_marginBottom="535dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="3sp"
-        android:text="@string/subs_count"
-        android:textAppearance="@style/profile_count"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/subs2_count"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="284dp"
-        android:layout_marginLeft="284dp"
-        android:layout_marginTop="177dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="573dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="3sp"
-        android:text="@string/subscriptions_count"
-        android:textAppearance="@style/profile_count"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
-
-    <TextView
-        android:id="@+id/votes_text"
-        android:layout_width="64dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="264dp"
-        android:layout_marginRight="264dp"
-        android:gravity="center"
-        android:lineSpacingExtra="2sp"
-        android:text="@string/votes_text"
-        android:textAppearance="@style/profile_text"
-        android:translationY="-0.98sp" />
-
-    <TextView
-        android:id="@+id/subs_text"
-        android:layout_width="64dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
-        android:gravity="center"
-        android:lineSpacingExtra="2sp"
-        android:text="@string/subs_text"
-        android:textAppearance="@style/profile_text"
-        android:translationY="-0.98sp" />
-
-    <TextView
-        android:id="@+id/subs2_text"
-        android:layout_width="58dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginLeft="264dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:gravity="center"
-        android:lineSpacingExtra="2sp"
-        android:text="@string/subs_text"
-        android:textAppearance="@style/profile_text"
-        android:translationY="-0.98sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fill">
 
 
-</FrameLayout>
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginBottom="11dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/subs_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="312dp"
+            android:background="#C4C4C4"
+            app:layout_constraintBottom_toTopOf="@+id/account_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="#C4C4C4"
+            app:layout_constraintBottom_toTopOf="@+id/account_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
+
+
+        <ImageView
+            android:id="@+id/rectangle_2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:layout_marginBottom="519dp"
+            android:background="@drawable/imageviewaccount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="110dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textNameAccount"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="142dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/user_name"
+            android:textAppearance="@style/user_name"
+            android:translationY="-0.98sp"
+            app:layout_constraintBottom_toTopOf="@+id/subs_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.559"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/votes_count"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="291dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="177dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/votes_count"
+            android:textAppearance="@style/profile_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/subs_count"
+            android:layout_width="78dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginRight="145dp"
+            android:layout_marginBottom="535dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/subs_count"
+            android:textAppearance="@style/profile_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/subs2_count"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="284dp"
+            android:layout_marginLeft="284dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="573dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/subscriptions_count"
+            android:textAppearance="@style/profile_count"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.087" />
+
+        <TextView
+            android:id="@+id/votes_text"
+            android:layout_width="64dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="264dp"
+            android:layout_marginRight="264dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/votes_text"
+            android:textAppearance="@style/profile_text"
+            android:translationY="-0.98sp" />
+
+        <TextView
+            android:id="@+id/subs_text"
+            android:layout_width="64dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/subs_text"
+            android:textAppearance="@style/profile_text"
+            android:translationY="-0.98sp" />
+
+        <TextView
+            android:id="@+id/subs2_text"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="264dp"
+            android:layout_marginLeft="264dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/subs_text"
+            android:textAppearance="@style/profile_text"
+            android:translationY="-0.98sp" />
+
+
+    </FrameLayout>
 
 
     <LinearLayout
@@ -253,9 +256,12 @@
         </ImageButton>
 
         <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+            android:id="@+id/SearchBtn"
+            android:onClick="clickOnSearchButton"
 
+            android:layout_width="22dp"
+
+            android:layout_height="22dp"
             android:layout_marginLeft="44dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/ic_baseline_search_24">

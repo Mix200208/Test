@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener { clickLoginButton() }
     }
 
-    fun clickLoginButton(){
+    fun clickLoginButton() {
         val userName: EditText = findViewById(R.id.UserName)
 
         //Отправка данных через ClientX
@@ -26,13 +26,14 @@ class MainActivity : AppCompatActivity() {
         //client.closeConnection()
 
         //Старт отдельного потока отправки данных через ClientK
-        Thread(ClientK(userName.text.toString())).start()
+        //Thread(ClientK(userName.text.toString())).start()
 
-        val intent = Intent(this,MainTestActivity::class.java)
-        intent.putExtra(MainTestActivity.USER_NAME, userName.text.toString())
+        val intent = Intent(this,
+                            ListPost::class.java)
+        intent.putExtra(MainTestActivity.USER_NAME,
+                        userName.text.toString())
         startActivity(intent)
     }
-
 
 
     override fun onStop() {
@@ -42,4 +43,6 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
     }
+
+
 }
