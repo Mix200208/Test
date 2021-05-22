@@ -35,12 +35,10 @@
             android:layout_height="676dp"
             android:orientation="vertical">
 
-            <ListView
-                android:id="@+id/postNews"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/PostList"
                 android:layout_width="match_parent"
-                android:layout_height="676dp">
-            </ListView>
-
+                android:layout_height="match_parent" />
         </LinearLayout>
 
 
