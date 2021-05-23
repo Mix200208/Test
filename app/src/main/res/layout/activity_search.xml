@@ -8,8 +8,7 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="57dp"
         android:background="@color/white"
         android:orientation="horizontal"
@@ -20,62 +19,74 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:id="@+id/Lenta"
-            android:onClick="clickOnPostButton"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_home_24">
 
-        </ImageButton>
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="clickOnPostButton">
 
-        <ImageButton
-            android:id="@+id/SearchBtn"
-            android:layout_width="22dp"
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-            android:layout_height="22dp"
+                android:background="@drawable/ic_baseline_home_24" />
+        </RelativeLayout>
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_search_24"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
             android:onClick="clickOnSearchButton">
 
-        </ImageButton>
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_baseline_search_24" />
+        </RelativeLayout>
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_add_circle_outline_24">
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-        </ImageButton>
+                android:background="@drawable/ic_baseline_add_circle_outline_24" />
+        </RelativeLayout>
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_notifications_none_24">
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-        </ImageButton>
+                android:background="@drawable/ic_baseline_notifications_none_24" />
+        </RelativeLayout>
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:onClick="clickOnHomeButton"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="clickOnHomeButton">
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_person_24">
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-        </ImageButton>
-
-
+                android:background="@drawable/ic_baseline_person_24" />
+        </RelativeLayout>
     </LinearLayout>
 
     <TextView
@@ -91,7 +102,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,UnknownId" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -100,10 +111,10 @@
         android:background="@color/fill"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="7dp"
+        app:navigationIcon="@drawable/ic_baseline_search_24"
         tools:ignore="MissingConstraints"
-        app:navigationIcon="@drawable/ic_baseline_search_24"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp" />
 
 
     <TextView
@@ -120,8 +131,6 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         tools:ignore="MissingConstraints" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
