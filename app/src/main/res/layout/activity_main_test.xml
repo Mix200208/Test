@@ -202,7 +202,7 @@
 
         <TextView
             android:id="@+id/subs_text"
-            android:layout_width="64dp"
+            android:layout_width="75dp"
             android:layout_height="18dp"
             android:layout_marginStart="140dp"
             android:layout_marginLeft="140dp"
@@ -211,15 +211,15 @@
             android:layout_marginRight="140dp"
             android:gravity="center"
             android:lineSpacingExtra="2sp"
-            android:text="@string/subs_text"
+            android:text="@string/subs1_text"
             android:textAppearance="@style/profile_text"
             android:translationY="-0.98sp" />
 
         <TextView
             android:id="@+id/subs2_text"
-            android:layout_width="58dp"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="264dp"
+            android:layout_marginStart="250dp"
             android:layout_marginLeft="264dp"
             android:layout_marginTop="200dp"
             android:layout_marginEnd="32dp"
@@ -229,8 +229,6 @@
             android:text="@string/subs_text"
             android:textAppearance="@style/profile_text"
             android:translationY="-0.98sp" />
-
-
 
 
     </FrameLayout>
@@ -251,7 +249,7 @@
         <ImageButton
             android:layout_width="22dp"
             android:layout_height="22dp"
-
+            android:onClick="clickOnHomeButton"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/ic_baseline_home_24">
@@ -305,8 +303,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="446dp"
+        android:layout_width="360dp"
+        android:layout_height="285dp"
         android:layout_marginBottom="58dp"
         android:background="@color/white"
         android:orientation="horizontal"
