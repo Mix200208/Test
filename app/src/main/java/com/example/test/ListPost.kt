@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test.Model.Post
@@ -45,7 +46,13 @@ class ListPost : AppCompatActivity() {
 
     }
 
+     fun Vote(view: View){
+         val text = "Вы проголосовали!"
+         val duration = Toast.LENGTH_SHORT
 
+         val toast = Toast.makeText(applicationContext, text, duration)
+         toast.show()
+     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
