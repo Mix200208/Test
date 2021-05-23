@@ -62,6 +62,9 @@
             android:layout_width="22dp"
             android:layout_height="22dp"
 
+            android:id="@+id/Lenta"
+            android:onClick="clickOnPostButton"
+
             android:layout_marginLeft="33dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/ic_baseline_home_24">
