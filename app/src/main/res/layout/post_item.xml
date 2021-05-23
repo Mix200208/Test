@@ -7,28 +7,29 @@
 
     <ImageView
         android:id="@+id/back"
-        android:layout_width="413dp"
-        android:layout_height="302dp"
-        android:background="#C6FF00"
+        android:layout_width="408dp"
+        android:layout_height="289dp"
+        android:background="#00FFEA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/login_edittext" />
+        app:srcCompat="@color/fill" />
 
     <ImageView
         android:id="@+id/Avatar"
         android:layout_width="75dp"
         android:layout_height="62dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back"
         app:srcCompat="@drawable/test1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Nick"
@@ -38,6 +39,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="36dp"
         android:text="Yaroslav Mishchenko"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/Avatar"
         app:layout_constraintTop_toTopOf="@+id/back" />
@@ -50,6 +52,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="44dp"
         android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
         android:text="Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,11 +61,15 @@
 
     <ImageView
         android:id="@+id/Like"
-        android:layout_width="39dp"
-        android:layout_height="23dp"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginRight="233dp"
+        app:layout_constraintEnd_toStartOf="@+id/Comment"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nick"
         app:srcCompat="@drawable/ic_baseline_favorite_24"
@@ -70,24 +77,32 @@
 
     <ImageView
         android:id="@+id/Comment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="33dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
         android:layout_marginTop="204dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back"
         app:layout_constraintTop_toBottomOf="@+id/Nick"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/ic_baseline_chat_bubble_outline_24"
-        tools:ignore="MissingConstraints,VectorDrawableCompat"
-        tools:layout_editor_absoluteX="91dp" />
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/Repost"
-        android:layout_width="32dp"
+        android:layout_width="31dp"
         android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="204dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Comment"
         app:layout_constraintTop_toBottomOf="@+id/Nick"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
-        tools:ignore="MissingConstraints,VectorDrawableCompat"
-        tools:layout_editor_absoluteX="139dp" />
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
