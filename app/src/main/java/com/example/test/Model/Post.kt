@@ -9,11 +9,17 @@ class Post {
     val info :Int
         get() =  drawableResourse
 
-    constructor( drawableResourse: Int) {
+    val text_info :String
+        get() =  text
+    val nick_info :String
+        get() =  nick
 
+    constructor( drawableResourse: Int,nick: String, text: String) {
+        this.nick = nick
+        this.text = text
         this.drawableResourse = drawableResourse
     }
-    constructor(nick: Int, text: String, ImgUrl: String, drawableResourse: Int) {
+    constructor(nick: String, text: String, ImgUrl: String, drawableResourse: Int) {
         this.nick = nick.toString()
         this.text = text
         this.ImgUrl = ImgUrl

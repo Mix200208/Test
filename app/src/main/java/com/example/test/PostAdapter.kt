@@ -30,6 +30,10 @@ class PostAdapter:RecyclerView.Adapter<PostAdapter.postviewholder> {
     }
 
     override fun onBindViewHolder(holder: postviewholder, position: Int) {
+        var post = mdata.get(position)
+        Glide.with(holder.itemView.context).load(mdata.get(position).info).transform(CenterCrop(),RoundedCorners(16)).into(holder.imgProfile)
+        holder.nick.setText(post.nick_info)
+        holder.post.setText(post.text_info)
         Glide.with(holder.itemView.context).load(mdata.get(position).info).transform(CenterCrop(),RoundedCorners(16)).into(holder.imgProfile)
 
     }

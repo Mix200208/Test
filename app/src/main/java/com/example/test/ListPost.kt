@@ -77,18 +77,10 @@ class ListPost : AppCompatActivity() {
 
     private fun initdataPost() {
         mdata = ArrayList<Post>()
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
-        mdata.add(Post(R.drawable.test1))
-        mdata.add(Post(R.drawable.test2))
+        mdata.add(Post(R.drawable.test1,"Yaroslav Mishchenko","Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно)"))
+        mdata.add(Post(R.drawable.test2,"Kostya Alaev","давайте на минуту остановимся и обсудим действительно важные вопросы например почему железногорск до сих пор не притянулся к магнитогорску"))
+        mdata.add(Post(R.drawable.test3,"Petya Iskorkin"," it et nibh dignissim, sit amet maximus orci maximus. Vestibulum imperdiet pulvinar dapibus. Duis ultrices congue massa id rhoncus."))
+
 
 
     }
