@@ -45,18 +45,13 @@ class MainTestActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_main_test)
 
+//        val username: String? = intent.getStringExtra(USER_NAME)
+        val userNameText : TextView = findViewById(R.id.textNameAccount)
+        userNameText.text = Socket.username
+
         initViews()
         initdataPost()
         postAdapt()
-
-
-
-        val username: String? = intent.getStringExtra(USER_NAME)
-        val userNameText : TextView = findViewById(R.id.textNameAccount)
-        userNameText.text = username
-
-
-
 
     }
     private fun postAdapt() {
