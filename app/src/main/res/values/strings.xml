@@ -5,11 +5,12 @@
     <string name="text_login">Enter login</string>
     <string name="user_name" />
     <string name="account">Account</string>
-    <string name="votes_count">50</string>
-    <string name="subs_count">100,5 K</string>
-    <string name="subscriptions_count">50</string>
-    <string name="subs_text">subs</string>
-    <string name="votes_text">votes</string>
+    <string name="votes_count">0</string>
+    <string name="subs_count">0</string>
+    <string name="subscriptions_count">0</string>
+    <string name="subs_text">Подписчиков</string>
+    <string name="subs1_text" translatable="false">Подписок</string>
+    <string name="votes_text">Опросов</string>
     <string name="login_text">Sign in</string>
     <string name="text_password">Enter password</string>
 </resources>

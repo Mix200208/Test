@@ -7,8 +7,9 @@
 
     <ImageView
         android:id="@+id/back"
-        android:layout_width="411dp"
+        android:layout_width="360dp"
         android:layout_height="360dp"
+        android:maxWidth = "411dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="2dp"
         android:background="#00FFEA"
@@ -64,7 +65,7 @@
 
     <TextView
         android:id="@+id/Post"
-        android:layout_width="376dp"
+        android:layout_width="330dp"
         android:layout_height="103dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -77,51 +78,49 @@
         app:layout_constraintTop_toBottomOf="@+id/Nick"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/Like"
-        android:layout_width="34dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="233dp"
-        android:layout_marginRight="233dp"
-        app:layout_constraintEnd_toStartOf="@+id/Comment"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nick"
-        app:srcCompat="@drawable/ic_baseline_favorite_24"
-        tools:ignore="VectorDrawableCompat" />
 
-    <ImageView
-        android:id="@+id/Comment"
-        android:layout_width="35dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="204dp"
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/Nick"
-        app:layout_constraintVertical_bias="0.825"
-        app:srcCompat="@drawable/ic_baseline_chat_bubble_outline_24"
-        tools:ignore="MissingConstraints,VectorDrawableCompat" />
-
-    <ImageView
-        android:id="@+id/Repost"
-        android:layout_width="31dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="204dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/Comment"
-        app:layout_constraintTop_toBottomOf="@+id/Nick"
-        app:layout_constraintVertical_bias="0.822"
-        app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
-        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <com.like.LikeButton
+            android:layout_marginLeft="15dp"
+            app:icon_type="heart"
+            android:minHeight="8dp"
+            android:minWidth="8dp"
+            android:layout_marginTop="12dp"
+            app:icon_size="10dp"
+            android:id="@+id/star_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:onClick="commentbutton"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_mode_comment_24">
+
+        </ImageButton>
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:onClick="sharebutton"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_baseline_share_24">
+
+        </ImageButton>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/Check1"
