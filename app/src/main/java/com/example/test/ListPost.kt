@@ -71,9 +71,18 @@ class ListPost : AppCompatActivity() {
     private fun initdataPost() {
         mdata = ArrayList<Post>()
         mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
         mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
         mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
         mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
+        mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
+        mdata.add(Post(R.drawable.test1))
+        mdata.add(Post(R.drawable.test2))
+
 
     }
 
