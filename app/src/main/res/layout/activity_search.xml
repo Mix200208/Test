@@ -23,7 +23,8 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:onClick="clickOnPostButton">
 
             <ImageButton
                 android:layout_width="22dp"
@@ -36,15 +37,15 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+
+            android:onClick="clickOnSearchButton">
 
             <ImageButton
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/ic_baseline_search_24"
-
-                android:onClick="clickOnSearchButton" />
+                android:background="@drawable/ic_baseline_search_24" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -76,15 +77,15 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:onClick="clickOnHomeButton">
 
             <ImageButton
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_centerInParent="true"
 
-                android:background="@drawable/ic_baseline_person_24"
-                android:onClick="clickOnHomeButton" />
+                android:background="@drawable/ic_baseline_person_24" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -101,7 +102,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,UnknownId" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -110,10 +111,10 @@
         android:background="@color/fill"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="7dp"
+        app:navigationIcon="@drawable/ic_baseline_search_24"
         tools:ignore="MissingConstraints"
-        app:navigationIcon="@drawable/ic_baseline_search_24"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp" />
 
 
     <TextView
@@ -130,8 +131,6 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         tools:ignore="MissingConstraints" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

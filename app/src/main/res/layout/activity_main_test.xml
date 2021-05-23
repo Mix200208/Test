@@ -234,7 +234,6 @@
 
 
     </FrameLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="57dp"
@@ -251,7 +250,8 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:onClick="clickOnPostButton">
 
             <ImageButton
                 android:layout_width="22dp"
@@ -264,15 +264,15 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+
+            android:onClick="clickOnSearchButton">
 
             <ImageButton
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/ic_baseline_search_24"
-
-                android:onClick="clickOnSearchButton" />
+                android:background="@drawable/ic_baseline_search_24" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -304,15 +304,15 @@
         <RelativeLayout
             android:layout_width="57dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:onClick="clickOnHomeButton">
 
             <ImageButton
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_centerInParent="true"
 
-                android:background="@drawable/ic_baseline_person_24"
-                android:onClick="clickOnHomeButton" />
+                android:background="@drawable/ic_baseline_person_24" />
         </RelativeLayout>
     </LinearLayout>
 
