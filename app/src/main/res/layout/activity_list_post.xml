@@ -103,10 +103,11 @@
 
         <ImageButton
 
-            android:onClick="clickOnHomeButton"
+
 
             android:layout_width="22dp"
             android:layout_height="22dp"
+            android:onClick="clickOnHomeButton"
 
             android:layout_marginLeft="44dp"
             android:layout_marginTop="16dp"

@@ -53,4 +53,5 @@ class MainTestActivity : AppCompatActivity() {
         val intent = Intent(this,Search::class.java)
         startActivity(intent)
     }
+
 }
