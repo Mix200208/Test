@@ -1,11 +1,12 @@
 package com.example.test
 
+import Socket.ClientK
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,11 +26,9 @@ class MainActivity : AppCompatActivity() {
 
         //Старт отдельного потока отправки данных через ClientK
         //Thread(ClientK(userName.text.toString())).start()
-
-        val intent = Intent(this,
-                            ListPost::class.java)
-        intent.putExtra(MainTestActivity.USER_NAME,
-                        userName.text.toString())
+        Thread(ClientK(userName.text.toString())).start()
+        val intent = Intent(this,MainTestActivity::class.java)
+        intent.putExtra(MainTestActivity.USER_NAME, userName.text.toString())
         startActivity(intent)
     }
 

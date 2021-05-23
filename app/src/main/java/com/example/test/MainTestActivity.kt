@@ -37,8 +37,6 @@ class MainTestActivity : AppCompatActivity() {
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
     }
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         try {
@@ -47,21 +45,25 @@ class MainTestActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_main_test)
 
-
-
-
-
         initViews()
         initdataPost()
         postAdapt()
-    }
 
+
+
+        val username: String? = intent.getStringExtra(USER_NAME)
+        val userNameText : TextView = findViewById(R.id.textNameAccount)
+        userNameText.text = username
+
+
+
+
+    }
     private fun postAdapt() {
         postAdapter = PostAdapter(mdata)
         RvPost.adapter = postAdapter
 
     }
-
     private fun initdataPost() {
         mdata = ArrayList<Post>()
         mdata.add(Post(R.drawable.test1,"Yaroslav Mishchenko","Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно)"))
@@ -71,23 +73,19 @@ class MainTestActivity : AppCompatActivity() {
 
 
     }
-
     companion object{
         const val USER_NAME = "username"
     }
-
     fun clickOnSearchButton(view: View) {
         val intent = Intent(this,Search::class.java)
         startActivity(intent)
     }
-
 
     fun clickOnHomeButton(view: View) {
         val intent = Intent(this,MainTestActivity::class.java)
         startActivity(intent)
 
     }
-
     fun clickOnPostButton(view: View) {
         val intent = Intent(this,ListPost::class.java)
         startActivity(intent)

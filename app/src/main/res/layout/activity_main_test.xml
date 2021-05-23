@@ -98,10 +98,11 @@
         <TextView
             android:id="@+id/textNameAccount"
             android:layout_width="match_parent"
-            android:layout_height="18dp"
+            android:layout_height="20dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
+            android:textSize="18dp"
             android:layout_marginTop="142dp"
             android:gravity="center"
             android:lineSpacingExtra="2sp"
