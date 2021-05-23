@@ -47,7 +47,7 @@
 
 
     <LinearLayout
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="57dp"
         android:background="@color/white"
         android:orientation="horizontal"
@@ -58,67 +58,73 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
 
-            android:id="@+id/Lenta"
-            android:onClick="clickOnPostButton"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_home_24">
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-        </ImageButton>
+                android:background="@drawable/ic_baseline_home_24" />
+        </RelativeLayout>
 
-        <ImageButton
-            android:id="@+id/SearchBtn"
-            android:onClick="clickOnSearchButton"
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-            android:layout_width="22dp"
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_baseline_search_24"
 
-            android:layout_height="22dp"
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_search_24">
+                android:onClick="clickOnSearchButton" />
+        </RelativeLayout>
 
-        </ImageButton>
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_add_circle_outline_24">
+                android:background="@drawable/ic_baseline_add_circle_outline_24" />
+        </RelativeLayout>
 
-        </ImageButton>
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_notifications_none_24">
+                android:background="@drawable/ic_baseline_notifications_none_24" />
+        </RelativeLayout>
 
-        </ImageButton>
+        <RelativeLayout
+            android:layout_width="57dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
-        <ImageButton
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
 
-
-
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:onClick="clickOnHomeButton"
-
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_person_24">
-
-        </ImageButton>
-
-
+                android:background="@drawable/ic_baseline_person_24"
+                android:onClick="clickOnHomeButton" />
+        </RelativeLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
