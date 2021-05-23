@@ -25,7 +25,11 @@ class MainTestActivity : AppCompatActivity() {
         RvPost.setHasFixedSize(true)
 
     }
-
+    fun clickOnHomeButton(){
+        val intent = Intent(this,
+                ListPost::class.java)
+        startActivity(intent)
+    }
     fun Vote(view: View){
         val text = "Вы проголосовали!"
         val duration = Toast.LENGTH_SHORT
