@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2979FF">
@@ -32,7 +33,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="229dp"
             android:layout_marginBottom="11dp"
             android:background="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/subs_text"
@@ -230,6 +231,8 @@
             android:translationY="-0.98sp" />
 
 
+
+
     </FrameLayout>
 
 
@@ -299,6 +302,25 @@
         </ImageButton>
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="446dp"
+        android:layout_marginBottom="58dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/HomePost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
