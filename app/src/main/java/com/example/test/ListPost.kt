@@ -11,30 +11,7 @@ import com.example.test.Model.Post
 import java.util.*
 
 class ListPost : AppCompatActivity() {
-   // val names = mutableListOf<String>(
-   //         "Ярык super.onCreate(savedInstanceState)        setContentView(R.layout.activity_list_post) super.onCreate(savedInstanceState)       setContentView(R.layout.activity_list_post)",
-   //         "Danil",
-    //        "Kostya",
-    //        "Ярык",
-    //        "Danil",
-      //      "Kostya",
-      //      "Ярык",
-       //     "Danil",
-      //      "Kostya",
-       //     "Ярык",
-        //    "Danil",
-       //     "Kostya",
-        //    "Ярык",
-       //     "Danil",
-       //     "Kostya",
-        //    "1",
-       //     "2",
-        //    "3",
-        //    "4",
-        //    "5",
-        //    "6",
-        //    "7"
- //   )
+
     lateinit var RvPost:RecyclerView
     lateinit var postAdapter:PostAdapter
     lateinit var mdata:ArrayList<Post>
@@ -66,11 +43,6 @@ class ListPost : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_post)
 
-      //  val listPost: ListView = findViewById(R.id.postNews)
-        //val adapter = ArrayAdapter<String>(this, R.layout.post_1,
-                                          // names)
-
-       // listPost.adapter = adapter
         initViews()
         initdataPost()
         postAdapt()
