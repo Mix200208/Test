@@ -3,6 +3,7 @@ package com.example.test
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
@@ -18,6 +19,7 @@ class MainTestActivity : AppCompatActivity() {
     lateinit var RvPost: RecyclerView
     lateinit var postAdapter:PostAdapter
     lateinit var mdata:ArrayList<Post>
+    lateinit var imgProfile:ImageView
 
     fun initViews(){
         RvPost = findViewById(R.id.HomePost)
@@ -48,6 +50,19 @@ class MainTestActivity : AppCompatActivity() {
 //        val username: String? = intent.getStringExtra(USER_NAME)
         val userNameText : TextView = findViewById(R.id.textNameAccount)
         userNameText.text = Socket.username
+        if(Socket.username=="Yaroslav Mishchenko"){
+            imgProfile = findViewById(R.id.rectangle_2)
+            imgProfile.setImageResource(R.drawable.test1)
+        }
+        if(Socket.username=="Kostya Alaev"){
+            imgProfile = findViewById(R.id.rectangle_2)
+            imgProfile.setImageResource(R.drawable.test2)
+        }
+
+        if(Socket.username=="Petya Iskorkin"){
+            imgProfile = findViewById(R.id.rectangle_2)
+            imgProfile.setImageResource(R.drawable.test3)
+        }
 
         initViews()
         initdataPost()

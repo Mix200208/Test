@@ -41,36 +41,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/view1"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="312dp"
-            android:background="#C4C4C4"
-            app:layout_constraintBottom_toTopOf="@+id/account_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.976"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.541" />
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="312dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="24dp"
-            android:background="#C4C4C4"
-            app:layout_constraintBottom_toTopOf="@+id/account_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.976"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.541" />
-
 
         <ImageView
             android:id="@+id/rectangle_2"
@@ -86,7 +56,7 @@
             android:layout_marginEnd="148dp"
             android:layout_marginRight="148dp"
             android:layout_marginBottom="519dp"
-            android:background="@drawable/imageviewaccount"
+            android:background="@drawable/test4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintCircleRadius="110dp"
             app:layout_constraintEnd_toEndOf="parent"
