@@ -1,94 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="360dp"
-        android:layout_height="360dp"
-        android:maxWidth = "411dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="2dp"
-        android:background="#00FFEA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@color/fill" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        tools:ignore="UselessParent">
 
-    <Button
-        android:id="@+id/check2"
-        android:layout_width="230dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Против"
-        android:onClick="Vote"
-        android:textColor="@color/white"
-        app:backgroundTint="#851F3DFF"
-        app:layout_constraintBottom_toBottomOf="@+id/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserPassword"
-        tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp">
 
-    <ImageView
-        android:id="@+id/Avatar"
-        android:layout_width="75dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/back"
-        app:srcCompat="@drawable/test1"
-        tools:ignore="MissingConstraints" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/test1"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="1dp">
 
-    <TextView
-        android:id="@+id/Nick"
-        android:layout_width="wrap_content"
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Firstname Lastname"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5 мин назад"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:text="Тема обсуждения"
+                android:textColor="@color/purple_200"
+                android:textSize="10sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="36dp"
-        android:text="Yaroslav Mishchenko"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/Avatar"
-        app:layout_constraintTop_toTopOf="@+id/back" />
+        android:minHeight="100dp">
 
-    <TextView
-        android:id="@+id/Post"
-        android:layout_width="330dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="60dp"
-        android:text="Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nick"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/Post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="@string/demo_post_text" />
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="57dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <Button
+                    style="@style/vote_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Vote"
+
+                    android:text="За" />
+
+                <Button
+                    style="@style/vote_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Vote"
+
+                    android:text="Против" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
         <com.like.LikeButton
             android:layout_marginLeft="15dp"
             app:icon_type="heart"
@@ -100,43 +145,144 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <ImageButton
-            android:onClick="commentbutton"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+    </RelativeLayout>
 
-            android:layout_marginLeft="33dp"
+</LinearLayout>
+
+
+    <!--
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:maxWidth = "411dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00FFEA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@color/fill" />
+
+        <Button
+            android:id="@+id/check2"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_mode_comment_24">
+            android:layout_marginBottom="60dp"
+            android:text="Против"
+            android:onClick="Vote"
+            android:textColor="@color/white"
+            app:backgroundTint="#851F3DFF"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UserPassword"
+            tools:ignore="MissingConstraints" />
 
-        </ImageButton>
-        <ImageButton
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:onClick="sharebutton"
-            android:layout_marginLeft="220dp"
+        <ImageView
+            android:id="@+id/Avatar"
+            android:layout_width="75dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_share_24">
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back"
+            app:srcCompat="@drawable/test1"
+            tools:ignore="MissingConstraints" />
 
-        </ImageButton>
+        <TextView
+            android:id="@+id/Nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="36dp"
+            android:text="Yaroslav Mishchenko"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Avatar"
+            app:layout_constraintTop_toTopOf="@+id/back" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/Post"
+            android:layout_width="330dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="60dp"
+            android:text="Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nick"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/Check1"
-        android:layout_width="230dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="100dp"
-        android:text="Поддерживаю"
-        android:textColor="@color/white"
-        app:backgroundTint="#851F3DFF"
-        app:layout_constraintBottom_toBottomOf="@+id/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserPassword"
-        android:onClick="Vote"
-        tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="57dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+            <com.like.LikeButton
+                android:layout_marginLeft="15dp"
+                app:icon_type="heart"
+                android:minHeight="8dp"
+                android:minWidth="8dp"
+                android:layout_marginTop="12dp"
+                app:icon_size="10dp"
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:onClick="commentbutton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_baseline_mode_comment_24">
+
+            </ImageButton>
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:onClick="sharebutton"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_baseline_share_24">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Check1"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="100dp"
+            android:text="Поддерживаю"
+            android:textColor="@color/white"
+            app:backgroundTint="#851F3DFF"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UserPassword"
+            android:onClick="Vote"
+            tools:ignore="MissingConstraints" />
+
+    -->
