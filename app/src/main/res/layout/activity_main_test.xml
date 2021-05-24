@@ -7,29 +7,34 @@
     android:background="#2979FF">
 
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <!--<ListView
-            android:id="@+id/listView"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <RelativeLayout
+            android:layout_marginTop="230dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="241dp"
-            android:layout_marginBottom="57dp"
-            android:background="@color/white" >
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-        </ListView>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/HomePost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
 
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/fill">
-
-
-        </View>
 
         <View
             android:layout_width="match_parent"
@@ -49,7 +54,6 @@
             android:layout_marginTop="24dp"
             android:layout_marginRight="312dp"
             android:background="#C4C4C4"
-            app:layout_constraintBottom_toTopOf="@+id/account_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.976"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +68,6 @@
             android:layout_marginTop="24dp"
             android:layout_marginRight="24dp"
             android:background="#C4C4C4"
-            app:layout_constraintBottom_toTopOf="@+id/account_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.976"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,11 +124,11 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="291dp"
-            android:layout_marginEnd="291dp"
             android:layout_marginStart="46dp"
             android:layout_marginLeft="46dp"
             android:layout_marginTop="177dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginRight="291dp"
             android:gravity="center_vertical"
             android:lineSpacingExtra="3sp"
             android:text="@string/votes_count"
@@ -231,8 +234,12 @@
             android:translationY="-0.98sp" />
 
 
-    </FrameLayout>
+    </RelativeLayout>
+
+
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:background="@color/white"
@@ -313,23 +320,6 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="285dp"
-        android:layout_marginBottom="58dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/HomePost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
