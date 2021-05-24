@@ -143,15 +143,15 @@
             android:layout_marginStart="20dp">
             <com.like.LikeButton
                 app:icon_type="heart"
-                app:icon_size="10dp"
+                app:icon_size="8dp"
                 android:id="@+id/star_button"
-                android:layout_width="24dp"
-                android:layout_height="24dp"/>
+                android:layout_height="24dp"
+                android:layout_width="24dp"/>
             <ImageButton
                 android:layout_marginLeft="20dp"
                 android:onClick="commentbutton"
-                android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:layout_width="24dp"
                 android:background="@drawable/ic_baseline_mode_comment_24"
                 android:layout_marginStart="20dp">
 
