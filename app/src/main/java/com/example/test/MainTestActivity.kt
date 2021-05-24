@@ -92,7 +92,7 @@ class MainTestActivity : AppCompatActivity() {
     }
 
     fun clickOnHomeButton(view: View) {
-        val intent = Intent(this,MainTestActivity::class.java)
+        val intent = Intent(this,ListPost::class.java)
         startActivity(intent)
 
     }
