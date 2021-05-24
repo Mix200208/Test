@@ -132,28 +132,30 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        >
+        android:layout_height="30dp">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp">
+            android:orientation="horizontal">
+
             <com.like.LikeButton
-                app:icon_type="heart"
-                app:icon_size="8dp"
                 android:id="@+id/star_button"
-                android:layout_height="24dp"
-                android:layout_width="24dp"/>
-            <ImageButton
-                android:layout_marginLeft="20dp"
-                android:onClick="commentbutton"
-                android:layout_height="24dp"
                 android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:icon_size="8dp"
+                app:icon_type="heart" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/ic_baseline_mode_comment_24"
-                android:layout_marginStart="20dp">
+                android:onClick="commentbutton">
 
             </ImageButton>
         </LinearLayout>
@@ -161,17 +163,17 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
+            android:layout_centerVertical="true">
 
             <ImageButton
-                android:layout_marginRight="20dp"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:onClick="sharebutton"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/ic_baseline_share_24"
-                android:layout_marginEnd="20dp">
+                android:onClick="sharebutton">
 
             </ImageButton>
         </LinearLayout>
@@ -179,141 +181,3 @@
     </RelativeLayout>
 
 </LinearLayout>
-
-
-    <!--
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="360dp"
-            android:layout_height="360dp"
-            android:maxWidth = "411dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="2dp"
-            android:background="#00FFEA"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@color/fill" />
-
-        <Button
-            android:id="@+id/check2"
-            android:layout_width="230dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="60dp"
-            android:text="Против"
-            android:onClick="Vote"
-            android:textColor="@color/white"
-            app:backgroundTint="#851F3DFF"
-            app:layout_constraintBottom_toBottomOf="@+id/back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/UserPassword"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/Avatar"
-            android:layout_width="75dp"
-            android:layout_height="62dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/back"
-            app:srcCompat="@drawable/test1"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/Nick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="36dp"
-            android:text="Yaroslav Mishchenko"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/Avatar"
-            app:layout_constraintTop_toTopOf="@+id/back" />
-
-        <TextView
-            android:id="@+id/Post"
-            android:layout_width="330dp"
-            android:layout_height="103dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginBottom="60dp"
-            android:text="Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/back"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Nick"
-            app:layout_constraintVertical_bias="0.0" />
-
-
-        <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="57dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-            <com.like.LikeButton
-                android:layout_marginLeft="15dp"
-                app:icon_type="heart"
-                android:minHeight="8dp"
-                android:minWidth="8dp"
-                android:layout_marginTop="12dp"
-                app:icon_size="10dp"
-                android:id="@+id/star_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <ImageButton
-                android:onClick="commentbutton"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-
-                android:layout_marginLeft="33dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/ic_baseline_mode_comment_24">
-
-            </ImageButton>
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:onClick="sharebutton"
-                android:layout_marginLeft="220dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/ic_baseline_share_24">
-
-            </ImageButton>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/Check1"
-            android:layout_width="230dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="100dp"
-            android:text="Поддерживаю"
-            android:textColor="@color/white"
-            app:backgroundTint="#851F3DFF"
-            app:layout_constraintBottom_toBottomOf="@+id/back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/UserPassword"
-            android:onClick="Vote"
-            tools:ignore="MissingConstraints" />
-
-    -->
