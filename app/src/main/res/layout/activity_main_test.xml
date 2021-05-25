@@ -1,229 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2979FF">
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
 
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="120dp">
 
-
-        <!--<ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="241dp"
-            android:layout_marginBottom="57dp"
-            android:background="@color/white" >
-
-        </ListView>-->
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/fill">
-
-
-        </View>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="229dp"
-            android:layout_marginBottom="11dp"
-            android:background="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/subs_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/rectangle_2"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="148dp"
-            android:layout_marginLeft="148dp"
-            android:layout_marginTop="67dp"
-            android:layout_marginEnd="148dp"
-            android:layout_marginRight="148dp"
-            android:layout_marginBottom="519dp"
-            android:background="@drawable/test4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintCircleRadius="110dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/test1"
+            app:civ_border_color="#FFF"
+            app:civ_border_width="0dp" />
 
-        <TextView
-            android:id="@+id/textNameAccount"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:textSize="18dp"
-            android:layout_marginTop="142dp"
-            android:gravity="center"
-            android:lineSpacingExtra="2sp"
-            android:text="@string/user_name"
-            android:textAppearance="@style/user_name"
-            android:translationY="-0.98sp"
-            app:layout_constraintBottom_toTopOf="@+id/subs_count"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.559"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
 
-        <TextView
-            android:id="@+id/votes_count"
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="46dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="177dp"
-            android:layout_marginEnd="291dp"
-            android:layout_marginRight="291dp"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="3sp"
-            android:text="@string/votes_count"
-            android:textAppearance="@style/profile_count"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/subs_count"
-            android:layout_width="78dp"
-            android:layout_height="27dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="144dp"
-            android:layout_marginLeft="144dp"
-            android:layout_marginTop="177dp"
-            android:layout_marginEnd="145dp"
-            android:layout_marginRight="145dp"
-            android:layout_marginBottom="535dp"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="3sp"
-            android:text="@string/subs_count"
-            android:textAppearance="@style/profile_count"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/subs2_count"
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="284dp"
-            android:layout_marginLeft="284dp"
-            android:layout_marginTop="177dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginRight="53dp"
-            android:layout_marginBottom="573dp"
-            android:gravity="center_vertical"
-            android:lineSpacingExtra="3sp"
-            android:text="@string/subscriptions_count"
-            android:textAppearance="@style/profile_count"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.285"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.087" />
-
-        <TextView
-            android:id="@+id/votes_text"
-            android:layout_width="64dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="200dp"
-            android:layout_marginEnd="264dp"
-            android:layout_marginRight="264dp"
-            android:gravity="center"
-            android:lineSpacingExtra="2sp"
-            android:text="@string/votes_text"
-            android:textAppearance="@style/profile_text"
-            android:translationY="-0.98sp" />
-
-        <TextView
-            android:id="@+id/subs_text"
-            android:layout_width="75dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="200dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"
-            android:gravity="center"
-            android:lineSpacingExtra="2sp"
-            android:text="@string/subs1_text"
-            android:textAppearance="@style/profile_text"
-            android:translationY="-0.98sp" />
-
-        <TextView
-            android:id="@+id/subs2_text"
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="200dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            android:gravity="center"
-            android:lineSpacingExtra="2sp"
-            android:text="@string/subs_text"
-            android:textAppearance="@style/profile_text"
-            android:translationY="-0.98sp" />
-
-
-    </FrameLayout>
-
-    <include layout="@layout/bottom_panel"/>
+    <TextView
+        android:id="@+id/textNameAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="\@username"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="285dp"
-        android:layout_marginBottom="58dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/HomePost"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Опросы"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="99999"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Подписчики"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="50"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Подписки"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HomePost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <include layout="@layout/bottom_panel" />
+
+</LinearLayout>

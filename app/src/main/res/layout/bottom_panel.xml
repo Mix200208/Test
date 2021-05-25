@@ -1,88 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+    android:layout_height="57dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    app:layout_constraintBottom_toBottomOf="parent">
 
 
-        <RelativeLayout
-            android:layout_width="57dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:onClick="clickOnPostButton">
+    <RelativeLayout
+        android:layout_width="57dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:onClick="clickOnPostButton">
 
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_centerInParent="true"
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_home_24"
 
-                android:background="@drawable/ic_baseline_home_24" />
-        </RelativeLayout>
+            android:onClick="clickOnPostButton" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="57dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
+    <RelativeLayout
+        android:layout_width="57dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
 
-            android:onClick="clickOnSearchButton">
+        android:onClick="clickOnSearchButton">
 
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/ic_baseline_search_24" />
-        </RelativeLayout>
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_search_24"
+            android:onClick="clickOnSearchButton" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="57dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="57dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
 
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_centerInParent="true"
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
 
-                android:background="@drawable/ic_baseline_add_circle_outline_24" />
-        </RelativeLayout>
+            android:background="@drawable/ic_baseline_add_circle_outline_24" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="57dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="57dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
 
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_centerInParent="true"
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
 
-                android:background="@drawable/ic_baseline_notifications_none_24" />
-        </RelativeLayout>
+            android:background="@drawable/ic_baseline_notifications_none_24" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="57dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:onClick="clickOnHomeButton">
+    <RelativeLayout
+        android:layout_width="57dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:onClick="clickOnHomeButton">
 
-            <ImageButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_centerInParent="true"
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_person_24"
 
-                android:background="@drawable/ic_baseline_person_24" />
-        </RelativeLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:onClick="clickOnHomeButton" />
+    </RelativeLayout>
+</LinearLayout>
