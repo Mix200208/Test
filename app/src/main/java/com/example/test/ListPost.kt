@@ -11,68 +11,90 @@ import com.example.test.Model.Post
 import java.util.*
 
 class ListPost : AppCompatActivity() {
-   // val names = mutableListOf<String>(
-   //         "Ярык super.onCreate(savedInstanceState)        setContentView(R.layout.activity_list_post) super.onCreate(savedInstanceState)       setContentView(R.layout.activity_list_post)",
-   //         "Danil",
+
+    companion object {
+        /* val post_name : String = "";
+         val post_data : String = "";*/
+
+        val mdata = ArrayList<Post>()
+
+        var isStartedYet = false;
+
+        fun addPost(post: Post) {
+            mdata.add(post);
+        }
+    }
+
+    // val names = mutableListOf<String>(
+    //         "Ярык super.onCreate(savedInstanceState)        setContentView(R.layout.activity_list_post) super.onCreate(savedInstanceState)       setContentView(R.layout.activity_list_post)",
+    //         "Danil",
     //        "Kostya",
     //        "Ярык",
     //        "Danil",
-      //      "Kostya",
-      //      "Ярык",
-       //     "Danil",
-      //      "Kostya",
-       //     "Ярык",
-        //    "Danil",
-       //     "Kostya",
-        //    "Ярык",
-       //     "Danil",
-       //     "Kostya",
-        //    "1",
-       //     "2",
-        //    "3",
-        //    "4",
-        //    "5",
-        //    "6",
-        //    "7"
- //   )
-    lateinit var RvPost:RecyclerView
-    lateinit var postAdapter:PostAdapter
-    lateinit var mdata:ArrayList<Post>
+    //      "Kostya",
+    //      "Ярык",
+    //     "Danil",
+    //      "Kostya",
+    //     "Ярык",
+    //    "Danil",
+    //     "Kostya",
+    //    "Ярык",
+    //     "Danil",
+    //     "Kostya",
+    //    "1",
+    //     "2",
+    //    "3",
+    //    "4",
+    //    "5",
+    //    "6",
+    //    "7"
+    //   )
+    lateinit var RvPost: RecyclerView
+    lateinit var postAdapter: PostAdapter
+    // lateinit var mdata:ArrayList<Post>
 
-    fun initViews(){
+    fun initViews() {
         RvPost = findViewById(R.id.PostList)
-        RvPost.layoutManager=LinearLayoutManager(this)
+        RvPost.layoutManager = LinearLayoutManager(this)
         RvPost.setHasFixedSize(true)
 
     }
-    fun sharebutton(view: View){
-        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
-        toast.show()
-    }
-    fun commentbutton(view: View){
-        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
-        toast.show()
-    }
-     fun Vote(view: View){
-         val text = "Вы проголосовали!"
-         val duration = Toast.LENGTH_SHORT
 
-         val toast = Toast.makeText(applicationContext, text, duration)
-         toast.show()
-     }
+    fun sharebutton(view: View) {
+        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
+        toast.show()
+    }
+
+    fun commentbutton(view: View) {
+        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
+        toast.show()
+    }
+
+    fun Vote(view: View) {
+        val text = "Вы проголосовали!"
+        val duration = Toast.LENGTH_SHORT
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_post)
 
-      //  val listPost: ListView = findViewById(R.id.postNews)
+        //  val listPost: ListView = findViewById(R.id.postNews)
         //val adapter = ArrayAdapter<String>(this, R.layout.post_1,
-                                          // names)
+        // names)
 
-       // listPost.adapter = adapter
+        // listPost.adapter = adapter
         initViews()
-        initdataPost()
+
+        if (!isStartedYet) {
+            initdataPost()
+            isStartedYet = true;
+        }
+
         postAdapt()
     }
 
@@ -82,17 +104,13 @@ class ListPost : AppCompatActivity() {
 
     }
 
-    fun CreatePost(view: View){
+    fun CreatePost(view: View) {
         val intent = Intent(this, CreatePost::class.java)
         startActivity(intent)
     }
 
-    fun addPost(post: Post){
-        mdata.add(post)
-    }
 
     private fun initdataPost() {
-        mdata = ArrayList<Post>()
         mdata.add(
             Post(
                 R.drawable.test1,
@@ -116,7 +134,6 @@ class ListPost : AppCompatActivity() {
         )
 
 
-
     }
 
     fun clickOnSearchButton(view: View) {
@@ -129,7 +146,6 @@ class ListPost : AppCompatActivity() {
         startActivity(intent)
 
     }
-
 
 
 }

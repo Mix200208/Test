@@ -1,8 +1,11 @@
 package com.example.test
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import com.example.test.Model.Post
 
 class CreatePost : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +15,12 @@ class CreatePost : AppCompatActivity() {
 
     fun SendPost(view: View){
 
+        val data = findViewById<EditText>(R.id.post_data).text.toString();
+
+
+        ListPost.addPost(Post(R.string.demo_post_text, "123", data))
+
+        val intent = Intent(this, ListPost::class.java)
+        startActivity(intent)
     }
 }
