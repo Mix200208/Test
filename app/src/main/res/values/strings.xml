@@ -13,4 +13,5 @@
     <string name="votes_text">Опроса</string>
     <string name="login_text">Sign in</string>
     <string name="text_password">Enter password</string>
+    <string name="demo_post_text" translatable="false">Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно</string>
 </resources>
