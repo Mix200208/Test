@@ -48,6 +48,7 @@
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_centerInParent="true"
+            android:onClick="CreatePost"
 
             android:background="@drawable/ic_baseline_add_circle_outline_24" />
     </RelativeLayout>

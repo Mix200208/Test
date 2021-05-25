@@ -32,4 +32,9 @@ class Search : AppCompatActivity() {
 
     }
 
+    fun CreatePost(view: View){
+        val intent = Intent(this, CreatePost::class.java)
+        startActivity(intent)
+    }
+
 }

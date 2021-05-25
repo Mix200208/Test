@@ -69,6 +69,12 @@ class MainTestActivity : AppCompatActivity() {
         postAdapt()
 
     }
+
+    fun CreatePost(view: View){
+        val intent = Intent(this, CreatePost::class.java)
+        startActivity(intent)
+    }
+
     private fun postAdapt() {
         postAdapter = PostAdapter(mdata)
         RvPost.adapter = postAdapter

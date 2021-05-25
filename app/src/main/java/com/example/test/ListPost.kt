@@ -82,6 +82,15 @@ class ListPost : AppCompatActivity() {
 
     }
 
+    fun CreatePost(view: View){
+        val intent = Intent(this, CreatePost::class.java)
+        startActivity(intent)
+    }
+
+    fun addPost(post: Post){
+        mdata.add(post)
+    }
+
     private fun initdataPost() {
         mdata = ArrayList<Post>()
         mdata.add(
