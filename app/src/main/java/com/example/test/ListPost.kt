@@ -29,34 +29,12 @@ class ListPost : AppCompatActivity() {
             "Yaroslav Mishchenko" to R.drawable.test1,
             "Petara94" to R.drawable.test3,
             "Kostya Alaev" to R.drawable.test2,
-            "MrShim1337" to R.drawable.coolman
+            "MrShim1337" to R.drawable.coolman,
+            "Anon" to R.drawable.test4
         );
     }
 
-    // val names = mutableListOf<String>(
-    //         "Ярык super.onCreate(savedInstanceState)        setContentView(R.layout.activity_list_post) super.onCreate(savedInstanceState)       setContentView(R.layout.activity_list_post)",
-    //         "Danil",
-    //        "Kostya",
-    //        "Ярык",
-    //        "Danil",
-    //      "Kostya",
-    //      "Ярык",
-    //     "Danil",
-    //      "Kostya",
-    //     "Ярык",
-    //    "Danil",
-    //     "Kostya",
-    //    "Ярык",
-    //     "Danil",
-    //     "Kostya",
-    //    "1",
-    //     "2",
-    //    "3",
-    //    "4",
-    //    "5",
-    //    "6",
-    //    "7"
-    //   )
+
     lateinit var RvPost: RecyclerView
     lateinit var postAdapter: PostAdapter
     // lateinit var mdata:ArrayList<Post>
@@ -69,12 +47,12 @@ class ListPost : AppCompatActivity() {
     }
 
     fun sharebutton(view: View) {
-        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
+        val toast = Toast.makeText(applicationContext, "В разработке", Toast.LENGTH_LONG)
         toast.show()
     }
 
     fun commentbutton(view: View) {
-        val toast = Toast.makeText(this, "Hello Android!", Toast.LENGTH_LONG)
+        val toast = Toast.makeText(applicationContext, "В разработке", Toast.LENGTH_LONG)
         toast.show()
     }
 
@@ -90,12 +68,6 @@ class ListPost : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_post)
-
-        //  val listPost: ListView = findViewById(R.id.postNews)
-        //val adapter = ArrayAdapter<String>(this, R.layout.post_1,
-        // names)
-
-        // listPost.adapter = adapter
         initViews()
 
         if (!isStartedYet) {

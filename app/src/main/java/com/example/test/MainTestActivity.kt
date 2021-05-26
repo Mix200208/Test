@@ -112,7 +112,7 @@ class MainTestActivity : AppCompatActivity() {
     }
 
     fun clickOnPostButton(view: View) {
-        val intent = Intent(this, ListPost::class.java)
+        val intent = Intent(this, CreatePost::class.java)
         startActivity(intent)
 
     }
