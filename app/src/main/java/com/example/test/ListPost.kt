@@ -22,7 +22,15 @@ class ListPost : AppCompatActivity() {
 
         fun addPost(post: Post) {
             mdata.add(post);
+
         }
+
+        val NickPhoto = mutableMapOf<String, Int>(
+            "Yaroslav Mishchenko" to R.drawable.test1,
+            "Petara94" to R.drawable.test3,
+            "Kostya Alaev" to R.drawable.test2,
+            "MrShim1337" to R.drawable.coolman
+        );
     }
 
     // val names = mutableListOf<String>(
@@ -113,22 +121,22 @@ class ListPost : AppCompatActivity() {
     private fun initdataPost() {
         mdata.add(
             Post(
-                R.drawable.test1,
+                NickPhoto["Yaroslav Mishchenko"] ?: R.drawable.test4,
                 "Yaroslav Mishchenko",
                 "Минусы уборки: - тратишь на это целый день - после уборки уже нет сил - постоянно нервничаешь - не можешь потом ничего найти Плюсы уборки: - в конце уборки нажимать на кнопку пылесоса и смотреть как шнур засасывается обратно)"
             )
         )
         mdata.add(
             Post(
-                R.drawable.test2,
+                NickPhoto["Kostya Alaev"] ?: R.drawable.test4,
                 "Kostya Alaev",
                 "давайте на минуту остановимся и обсудим действительно важные вопросы например почему железногорск до сих пор не притянулся к магнитогорску"
             )
         )
         mdata.add(
             Post(
-                R.drawable.test3,
-                "Petya Iskorkin",
+                NickPhoto["Petara94"] ?: R.drawable.test4,
+                "Petara94",
                 " it et nibh dignissim, sit amet maximus orci maximus. Vestibulum imperdiet pulvinar dapibus. Duis ultrices congue massa id rhoncus."
             )
         )

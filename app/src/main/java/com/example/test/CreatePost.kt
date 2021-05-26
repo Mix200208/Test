@@ -19,7 +19,7 @@ class CreatePost : AppCompatActivity() {
         //val nick = findViewById<EditText>(R.id.textNameAccount).text.toString();
 
 
-        ListPost.addPost(Post(R.string.demo_post_text, Socket.username, data))
+        ListPost.addPost(Post(ListPost.NickPhoto[Socket.username] ?: R.drawable.test4, Socket.username, data))
 
         val intent = Intent(this, ListPost::class.java)
         startActivity(intent)
