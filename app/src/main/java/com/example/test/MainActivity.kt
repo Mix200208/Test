@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     fun clickLoginButton() {
         val userName: EditText = findViewById(R.id.UserName)
-        Socket.username = userName.text.toString();
+        Socket.username = userName.text.    toString();
         val executorService = Executors.newFixedThreadPool(1)
         val future : Future<String> = executorService.submit(ClientK(Socket.username))
         val kek = future.get()
